@@ -17,5 +17,9 @@ PRODUCT_COPY_FILES += \
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
+# Telephony
+PRODUCT_PACKAGES += \
+    telephony-ext
+
 # Call proprietary blob setup
 $(call inherit-product-if-exists, vendor/oppo/RMX1801/RMX1801-vendor.mk)
