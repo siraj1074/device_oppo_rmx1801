@@ -6,10 +6,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Snap
 
-# HIDL
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/compatibility_matrix.xml:system/compatibility_matrix.xml
-
 # Net
 PRODUCT_PACKAGES += \
     netutils-wrapper-1.0
