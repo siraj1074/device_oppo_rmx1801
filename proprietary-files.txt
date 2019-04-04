@@ -134,7 +134,7 @@ etc/vstab_configs/vstab_db_1080p_video_0_imx519_lsm.config
 etc/vstab_configs/vstab_db_720p_preview_0_imx519_bmi.config
 etc/vstab_configs/vstab_db_720p_preview_0_imx519_lsm.config
 etc/vstab_configs/vstab_db_720p_video_0_imx519_bmi.config
-etc/vstab_configs/vstab_db_720p_video_0_imx519_lsm.config										 
+etc/vstab_configs/vstab_db_720p_video_0_imx519_lsm.config
 
 # Camera firmware
 etc/firmware/cpp_firmware_v1_1_1.fw
@@ -233,7 +233,7 @@ lib64/vendor.oppo.hardware.biometrics.fingerprint@2.1.so
 lib/android.frameworks.fingerprintservice@1.0.so
 lib64/android.frameworks.fingerprintservice@1.0.so
 lib/android.hardware.biometrics.fingerprint@2.1.so
-lib64/android.hardware.biometrics.fingerprint@2.1.so					
+lib64/android.hardware.biometrics.fingerprint@2.1.so
 
 # GPS
 etc/permissions/com.qti.location.sdk.xml
@@ -288,24 +288,25 @@ lib/libqmi_cci_system.so
 # Radio
 -app/QtiTelephonyService/QtiTelephonyService.apk
 -app/QtiSystemService/QtiSystemService.apk
+-app/datastatusnotification/datastatusnotification.apk
+-app/embms/embms.apk
 -priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
 etc/permissions/embms.xml
 etc/permissions/qcrilhook.xml
 etc/permissions/telephonyservice.xml
 framework/QtiTelephonyServicelibrary.jar
 framework/qcrilhook.jar
+framework/embmslibrary.jar
 
 # Radio - IMS
--app/ims/ims.apk
+-app/ims/ims.apk|e0982b8ecbb0d44643c7a18fe837796bb42f6c3a
 -app/imssettings/imssettings.apk
 -app/uceShimService/uceShimService.apk
 etc/permissions/qti-vzw-ims-internal.xml
 lib/com.qualcomm.qti.imscmservice@1.0.so
 lib/lib-imscamera.so
 lib/lib-imsvideocodec.so
-lib/lib-imsvideocodec.so
 lib/lib-imsvtextutils.so
-lib/lib-imsvtutils.so
 lib/lib-imsvtutils.so
 lib/libimscamera_jni.so
 lib/libimsmedia_jni.so
