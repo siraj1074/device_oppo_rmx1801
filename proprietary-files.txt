@@ -6,30 +6,15 @@ framework/vendor.oppo.hardware.biometrics.fingerprintpay-V1.0-java.jar
 lib64/vendor.oppo.hardware.biometrics.fingerprintpay@1.0.so
 lib/vendor.oppo.hardware.biometrics.fingerprintpay@1.0.so
 
-# AOSP Modules
-lib/rfsa/adsp/libapps_mem_heap.so
-lib/rfsa/adsp/libdspCV_skel.so
-lib/rfsa/adsp/libfastcvadsp.so
-lib/rfsa/adsp/libfastcvadsp_skel.so
-lib/rfsa/adsp/libhvxMathVIO.so
-lib/rfsa/adsp/libqvr_adsp_driver_skel.so
-lib/rfsa/adsp/libscveBlobDescriptor_skel.so
-lib/rfsa/adsp/libscveFaceLandmark_skel.so
-lib/rfsa/adsp/libscveT2T_skel.so
-
 # Audio
 lib/libaudioroute.so
 lib64/libaudioroute.so
+lib/libtinyalsa.so
+lib64/libtinyalsa.so
 
 # Audio KTV
 lib64/vendor.oppo.hardware.ktv@1.0.so
 lib/vendor.oppo.hardware.ktv@1.0.so
-
-# Bluetooth (ANT+)
-lib/com.qualcomm.qti.ant@1.0.so
--lib/libantradio.so
-lib64/com.qualcomm.qti.ant@1.0.so
--lib64/libantradio.so
 
 # Bluetooth (LDAC)
 lib/libldacBT_abr.so
@@ -40,41 +25,7 @@ lib64/libldacBT_enc.so
 # Camera
 bin/mm-qcamera-daemon
 lib/libcritical_log_service.so
-lib/libjni_makeupV2.so
-lib/libscveBlobDescriptor.so
-lib/libscveBlobDescriptor_stub.so
-lib/libscveCommon.so
-lib/libscveCommon_stub.so
-lib/libscveFaceLandmarks.so
-lib/libscveFaceLandmarks_stub.so
-lib/libscveFaceRecognition.so
-lib/libscveImageCorrection.so
-lib/libscveObjectSegmentation.so
-lib/libscveObjectTracker.so
-lib/libscveObjectTracker_stub.so
-lib/libscvePanorama.so
-lib/libscvePanorama_lite.so
-lib/libts_detected_face_jni.so
-lib/libts_face_beautify_hal.so
-lib/libts_face_beautify_jni.so
 lib64/libcritical_log_service.so
-lib64/libjni_makeupV2.so
-lib64/libscveBlobDescriptor.so
-lib64/libscveBlobDescriptor_stub.so
-lib64/libscveCommon.so
-lib64/libscveCommon_stub.so
-lib64/libscveFaceLandmarks.so
-lib64/libscveFaceLandmarks_stub.so
-lib64/libscveFaceRecognition.so
-lib64/libscveImageCorrection.so
-lib64/libscveObjectSegmentation.so
-lib64/libscveObjectTracker.so
-lib64/libscveObjectTracker_stub.so
-lib64/libscvePanorama.so
-lib64/libscvePanorama_lite.so
-lib64/libts_detected_face_jni.so
-lib64/libts_face_beautify_hal.so
-lib64/libts_face_beautify_jni.so
 
 # Camera configs
 etc/camera/cp/CPCalibrationData.bin
@@ -88,6 +39,18 @@ etc/camera/faceTpl1.rgb32
 etc/camera/gasryuv.model
 etc/camera/skinSeg.model
 etc/camera/Charming.cng
+
+# Camera firmware
+etc/firmware/cpp_firmware_v1_1_1.fw
+etc/firmware/cpp_firmware_v1_1_6.fw
+etc/firmware/cpp_firmware_v1_2_0.fw
+etc/firmware/cpp_firmware_v1_4_0.fw
+etc/firmware/cpp_firmware_v1_5_0.fw
+etc/firmware/cpp_firmware_v1_5_2.fw
+etc/firmware/cpp_firmware_v1_6_0.fw
+etc/firmware/cpp_firmware_v1_8_0.fw
+etc/firmware/cpp_firmware_v1_10_0.fw
+etc/firmware/cpp_firmware_v1_12_0.fw
 
 # Camera postprocessing
 etc/vstab_configs/vstab_db_4k_video_1.config
@@ -135,18 +98,6 @@ etc/vstab_configs/vstab_db_720p_preview_0_imx519_bmi.config
 etc/vstab_configs/vstab_db_720p_preview_0_imx519_lsm.config
 etc/vstab_configs/vstab_db_720p_video_0_imx519_bmi.config
 etc/vstab_configs/vstab_db_720p_video_0_imx519_lsm.config
-
-# Camera firmware
-etc/firmware/cpp_firmware_v1_1_1.fw
-etc/firmware/cpp_firmware_v1_1_6.fw
-etc/firmware/cpp_firmware_v1_2_0.fw
-etc/firmware/cpp_firmware_v1_4_0.fw
-etc/firmware/cpp_firmware_v1_5_0.fw
-etc/firmware/cpp_firmware_v1_5_2.fw
-etc/firmware/cpp_firmware_v1_6_0.fw
-etc/firmware/cpp_firmware_v1_8_0.fw
-etc/firmware/cpp_firmware_v1_10_0.fw
-etc/firmware/cpp_firmware_v1_12_0.fw
 
 # CNE
 -priv-app/CNEService/CNEService.apk
@@ -207,19 +158,9 @@ lib64/libGPTEE_system.so
 lib64/libQTEEConnector_system.so
 lib64/vendor.qti.hardware.qteeconnector@1.0.so
 
-# DSP
-etc/scve/facereco/gModel.dat
-
 # ESE-Powermanager
 lib/vendor.qti.esepowermanager@1.0.so
 lib64/vendor.qti.esepowermanager@1.0.so
-
-# Face unlock
-lib/vendor.oppo.hardware.biometrics.face@1.0.so
-lib64/vendor.oppo.hardware.biometrics.face@1.0.so
-framework/vendor.oppo.hardware.biometrics.face-V1.0-java.jar
-lib/android.frameworks.faceservice@1.0.so
-lib64/android.frameworks.faceservice@1.0.so
 
 # Factory
 lib/vendor.qti.hardware.factory@1.0.so
@@ -255,25 +196,17 @@ lib64/vendor.qti.hardware.improvetouch.blobmanager@1.0.so
 lib64/vendor.qti.hardware.improvetouch.gesturemanager@1.0.so
 lib64/vendor.qti.hardware.improvetouch.touchcompanion@1.0.so
 
+# LL-NDK
+lib/libandroid_net.so
+lib64/libandroid_net.so
+
 # Media
 lib/libmmosal.so
 lib/vendor.qti.hardware.vpp@1.1.so
 lib64/libmmosal.so
 lib64/vendor.qti.hardware.vpp@1.1.so
 
-# Misc
-lib/libandroid_net.so
-lib64/libandroid_net.so
-lib/libtinyalsa.so
-lib64/libtinyalsa.so
-
 # Perf
-lib/libqti_performance.so
-lib/vendor.qti.hardware.perf@1.0.so
-lib/libqti-perfd-client_system.so
-lib64/libqti_performance.so
-lib64/vendor.qti.hardware.perf@1.0.so
-lib64/libqti-perfd-client_system.so
 lib/vendor.qti.hardware.iop@1.0.so
 lib/vendor.qti.hardware.iop@2.0.so
 lib64/vendor.qti.hardware.iop@1.0.so
@@ -335,7 +268,7 @@ lib/sensors.hal.tof.so
 lib64/libsensor_test.so
 lib64/sensors.hal.tof.so
 
-# Tethering
+# Tether Offload
 lib64/android.hardware.tetheroffload.control@1.0.so
 
 # TUI
@@ -346,13 +279,14 @@ lib64/vendor.qti.hardware.tui_comm@1.0.so
 lib64/android.hardware.usb@1.0.so
 
 # Wifi
-lib64/android.hardware.wifi@1.1.so
 lib64/android.hardware.wifi@1.0.so
+lib64/android.hardware.wifi@1.1.so
 lib64/android.hardware.wifi.supplicant@1.0.so
 lib64/vendor.qti.hardware.wifi.keystore@1.0.so
 
 # Wi-Fi Display
 -app/WfdService/WfdService.apk
+-framework/WfdCommon.jar
 bin/wfdservice
 etc/init/wfdservice.rc
 etc/wfdconfig.xml

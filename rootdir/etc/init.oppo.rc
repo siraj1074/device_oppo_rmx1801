@@ -15,7 +15,7 @@ import init.oppo.reserve.rc
 
 #ifdef VENDOR_EDIT
 #Hongdao.yu@BSP.Fingerprint.Basic, 2017/11/27, Add for face face recognition rc
-import /vendor/etc/init/hw/init.oppo.face.rc
+# import /vendor/etc/init/hw/init.oppo.face.rc
 #endif
 
 #ifdef VENDOR_EDIT
