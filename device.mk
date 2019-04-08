@@ -75,5 +75,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     telephony-ext
 
+# Wifi display
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.debug.wfd.enable=1 \
+    persist.sys.wfd.virtual=0 \
+    persist.hwc.enable_vds=1
+
 # Call proprietary blob setup
 $(call inherit-product-if-exists, vendor/oppo/RMX1801/RMX1801-vendor.mk)
