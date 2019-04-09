@@ -21,6 +21,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     Snap
 
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.camera.HAL3.enabled=1 \
+    persist.camera.eis.enabled=1
+
 # Device init scripts
 PRODUCT_PACKAGES += \
     init.target.rc \
