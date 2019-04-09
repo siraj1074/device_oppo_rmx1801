@@ -32,6 +32,10 @@ PRODUCT_PACKAGES += \
     init.oppo.reserve.rc \
     init.recovery.qcom.rc
 
+# Doze
+PRODUCT_PACKAGES += \
+    OppoDoze
+
 # Fingerprint
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/permissions/vendor.oppo.hardware.fingerprint.xml:system/etc/permissions/vendor.oppo.hardware.fingerprint.xml
